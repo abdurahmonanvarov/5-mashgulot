@@ -1,0 +1,64 @@
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0; 
+    background-color: #222;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.section1, .section2{
+width: 100%;
+min-height: 100vh;
+position: relative;
+transform-style: preserve-3d;
+
+}
+.section1::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(https://img.freepik.com/free-photo/group-elephants-big-green-tree-wilderness_181624-16897.jpg?w=996&t=st=1715518577~exp=1715519177~hmac=f06068594397cf433197b35798e3eecd495fb9027d6edb71d08d0f180d456f38) top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
+}
+.section1 .text{
+    top: 10%;
+    transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%,10%);
+}
+.section1::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(https://img.freepik.com/free-photo/group-elephants-big-green-tree-wilderness_181624-16897.jpg?w=996&t=st=1715518577~exp=1715519177~hmac=f06068594397cf433197b35798e3eecd495fb9027d6edb71d08d0f180d456f38) top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
+}
+.section2{
+    background-color: rgb(68, 35, 19);
+}
+.text{
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15vh;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3) 5px 5px 70px rgb(255, 255, 255, 0.5);
+    transform: scale(1,1.1) translate(-50%, 10%) ;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
